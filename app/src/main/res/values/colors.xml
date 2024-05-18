@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorNightProgressBarBackground">#99EEEEEE</color>
+    <color name="colorNightProgressBarProgress">#80000000</color>
+
+    <color name="colorNightPlayerSeekBarSecond">#888</color>
+    <color name="colorNightPlayerSeekBarProgress">#bfbfbf</color>
+
+    <color name="colorNightVolumeSeekBarSecond">#50EEEEEE</color>
+    <color name="colorNightVolumeSeekBarProgress">#99EEEEEE</color>
+
+    <color name="colorNightBlack">#000000</color>
+    <color name="colorNightDrawableBlack">#888</color>
+    <color name="colorNightViewBlack">#000000</color>
+    <color name="colorNightGroundBlack">#30000000</color>
+    <color name="colorNightSearchBlack">#30EEEEEE</color>
+    <color name="colorNightWhite">#000000</color>
+    <color name="colorNightMask">#000000</color>
+    <color name="colorNightSeaBlue">#014977</color>
+    <color name="colorNightSeaBlueLight">#4094C8</color>
+    <color name="colorNightSeaBlueBottom">#045CA2</color>
+    <color name="colorNightSuggestionStartColor">#01000000</color>
+    <color name="colorNightSuggestionEndColor">#60EEEEEE</color>
+
+    <color name="colorNightViewRoundBgColor">#28EEEEEE</color>
+    <color name="colorNightViewLine">#A9B7C6</color>
+
+    <color name="colorNightBrown">#311111</color>
+
+    <color name="colorHalfWhite">#99EEEEEE</color>
+    <color name="color99White">#99EEEEEE</color>
+    <color name="color80White">#90EEEEEE</color>
+    <color name="color60White">#60EEEEEE</color>
+    <color name="color40White">#40EEEEEE</color>
+    <color name="color30White">#30EEEEEE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color99Black">#99000000</color>
+    <color name="color90Black">#90000000</color>
+    <color name="color80Black">#80000000</color>
+    <color name="color70Black">#70000000</color>
+    <color name="color60Black">#60000000</color>
+    <color name="color50Black">#50000000</color>
+    <color name="color40Black">#40000000</color>
+    <color name="color36Black">#60000000</color>
+    <color name="color30Black">#30000000</color>
+    <color name="color20Black">#20000000</color>
+    <color name="color10Black">#10000000</color>
+    <color name="color01Black">#00000000</color>
+    <color name="colorSkyBlue">#9900ccFF</color>
+    <color name="color33SkyBlue">#3300ccFF</color>
+    <color name="color50SkyBlue">#5000ccFF</color>
+    <color name="colorGrey">#CCCCCC</color>
+    <color name="colorWhite">#EEEEEE</color>
+    <color name="colorDarkGrey">#aaa</color>
+    <color name="colorRelativeGrey">#888</color>
+    <color name="colorCodeGrey">#A9B7C6</color>
+    <color name="colorFragmentGrey">#CDCDCD</color>
+    <color name="color30CodeGrey">#30A9B7C6</color>
+    <color name="colorBlue">#01B0FF</color>
+    <color name="colorDarkBlue">#3F6AAA</color>
+    <color name="colorFragmentGreen">#00EEEE</color>
+    <color name="notification_bg">#e91e63</color>
+    <color name="colorRed">#EE0C58</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorLemonYellowTitle">#F8D873</color>
+    <color name="colorLemonYellow">#9E7707</color>
+    <color name="colorNightComment">#000000</color>
+    <color name="colorOrange">#FF6736</color>
+    <color name="colorViolet">#9F6FFD</color>
+    <color name="colorLrcNormal">#3D3D40</color>
+    <color name="colorWuppo">#F0FA95EC</color>
+</resources>

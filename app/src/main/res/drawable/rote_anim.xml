@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--一个item对应一帧：一张图片-->
+    <item android:drawable="@drawable/route_1"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_2"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_3"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_4"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_5"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_6"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_7"
+        android:duration="300"/>
+    <item android:drawable="@drawable/route_8"
+        android:duration="300"/>
+    <!--后面图片操作同上，一共8张图片-->
+</animation-list>

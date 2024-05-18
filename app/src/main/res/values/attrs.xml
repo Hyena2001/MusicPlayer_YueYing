@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressBar">
+    <!--底部颜色-->
+    <attr name="color_bg" format="color"/>
+    <!--进度颜色-->
+    <attr name="color_progress" format="color"/>
+    <!--进度条宽度-->
+    <attr name="width_stroke" format="float"/>
+    <!--绘圆与边界距离 范围 0f+ 不宜太大，最佳显示效果即可 -->
+    <attr name="distance_boundary" format="float"/>
+    <!--进度条初始进度  -->
+    <attr name="progress" format="integer"/>
+    <!--进度条总进度  -->
+    <attr name="max" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LrcView">
+
+        <attr name="lrcMode" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="floating" value="1"/>
+            <enum name="karaoke" value="2"/>
+        </attr>
+
+        <attr name="highLineColor" format="color|reference"/>
+
+        <attr name="lrcColor" format="color|reference"/>
+
+    </declare-styleable>
+
+
+</resources>

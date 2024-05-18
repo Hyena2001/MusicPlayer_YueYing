@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="clip_vertical|clip_horizontal"
+    android:clipOrientation="horizontal|vertical">
+    <!--gravity: 代表了drawable在显示不全的情况下，最先显示出来的位置-->
+    <!--clipOrientation: 代表不断裁剪显示的方向-->
+</clip>

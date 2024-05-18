@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="userInfo"
+            type="com.example.yueying2.viewmodel.MusicViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main_ui_root"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="98dp"
+            android:id="@+id/activity_main_top_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="?android:selectableItemBackground">
+
+<!--            android:background="?android:selectableItemBackgroundBorderless"-->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/activity_main_iv_user"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias=".037"
+                android:contentDescription="@string/label_MineFragment_user_icon"
+                tools:viewBindingIgnore="true"
+                android:background="@drawable/pic_02"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/activity_main_iv_edit_user"
+                android:src="@drawable/route_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias=".963"
+                android:padding="8dp"
+                tools:viewBindingIgnore="true"
+                android:contentDescription="@string/label_MineFragment_user_share"/>
+
+            <TextView
+                android:id="@+id/activity_main_tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/label_MineFragment_user_name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/activity_main_tv_label"
+                app:layout_constraintEnd_toStartOf="@id/activity_main_iv_edit_user"
+                app:layout_constraintHorizontal_bias=".00"
+                app:layout_constraintStart_toEndOf="@id/activity_main_iv_user"
+                app:layout_constraintTop_toTopOf="@id/activity_main_iv_user"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/activity_main_tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/label_MineFragment_user_label"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/activity_main_iv_user"
+                app:layout_constraintEnd_toStartOf="@id/activity_main_grid_layout"
+                app:layout_constraintHorizontal_bias=".00"
+                app:layout_constraintStart_toEndOf="@id/activity_main_iv_user"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_user"
+                tools:viewBindingIgnore="true" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_main_grid_layout"
+                android:rowCount="2"
+                android:columnCount="1"
+                app:layout_constraintTop_toTopOf="@id/activity_main_iv_user"
+                app:layout_constraintBottom_toBottomOf="@id/activity_main_iv_user"
+                app:layout_constraintEnd_toStartOf="@id/activity_main_iv_edit_user"
+                android:layout_marginEnd="20dp"
+                android:background="?android:selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/activity_main_iv_main"
+                    android:layout_width="24dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/love_3"
+                    android:contentDescription="@string/label_MineFragment_local_download"/>
+
+                <TextView
+                    android:id="@+id/activity_main_tv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_MineFragment_local_download"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_top_layout">
+
+            <TextView
+                android:id="@+id/activity_main_tv_notification_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
+                android:gravity="center_vertical"
+                android:text="@string/label_Dialog_scroll_set_Notification_Style"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:viewBindingIgnore="true" />
+
+<!--            android:text="@{userInfo.customStyle ? @string/Notification_Style_Custom : @string/Notification_Style_System,default=@string/Notification_Style_System}"-->
+            <TextView
+                android:id="@+id/activity_main_tv_notification_style_show"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/activity_main_tv_notification_style"
+                android:gravity="center_vertical"
+                android:text="@string/Notification_Style_System"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:viewBindingIgnore="true" />
+
+<!--            android:text="@{userInfo.phoneRefresh,default=@string/label_phone_refresh}"-->
+            <TextView
+                android:id="@+id/activity_main_tv_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_toStartOf="@id/activity_main_notification_style_switch"
+                android:layout_toEndOf="@id/activity_main_tv_notification_style_show"
+                android:gravity="center_vertical"
+                android:text="@string/label_phone_refresh"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:viewBindingIgnore="true" />
+
+<!--            android:checked="@{userInfo.customStyle,default=false}"-->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/activity_main_notification_style_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:checked="@{false}"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <!--底部播放控制模块分割线-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_activity_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/colorWuppo"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/main_activity_bottom_iv_list"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="@string/label_Activity_list"
+                android:padding="5dp"
+                android:src="@drawable/iv_list"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias=".97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".3" />
+
+            <com.example.yueying2.custom.CircleProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/main_activity_bottom_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/main_activity_bottom_iv_list"
+                app:layout_constraintBottom_toBottomOf="@id/main_activity_bottom_iv_list"
+                app:layout_constraintEnd_toStartOf="@id/main_activity_bottom_iv_list"
+                android:layout_marginEnd="12dp"
+                app:max="@{userInfo.max,default=100}"
+                app:progress="@{userInfo.progress,default=10}"
+                android:background="?android:selectableItemBackgroundBorderless"
+                app:color_progress="@color/colorNightViewBlack"/>
+
+
+            <!--            android:src="@{userInfo.playbackResId,default=@drawable/iv_main_play}"-->
+            <ImageView
+                android:id="@+id/main_activity_bottom_iv_play"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/label_Activity_toggle"
+                android:padding="0dp"
+                android:src="@{userInfo.playbackResId,default=@drawable/iv_main_play}"
+                app:layout_constraintBottom_toBottomOf="@id/main_activity_bottom_progress_bar"
+                app:layout_constraintEnd_toEndOf="@id/main_activity_bottom_progress_bar"
+                app:layout_constraintStart_toStartOf="@id/main_activity_bottom_progress_bar"
+                app:layout_constraintTop_toTopOf="@id/main_activity_bottom_progress_bar"
+                android:onClick="@{userInfo.playbackButton}"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/main_activity_bottom_progress_bar_line"
+            app:layout_constraintBottom_toTopOf="@id/main_activity_bottom_layout"
+            android:background="@color/color99White"
+            android:contentDescription="@string/label_Activity_line"
+            tools:viewBindingIgnore="true"/>
+
+<!--        android:background="@{userInfo.record,default=@drawable/iv_record_128}"?-->
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:id="@+id/main_activity_bottom_iv_album"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            android:background="@{userInfo.record, default=@drawable/iv_record_128}"
+            app:layout_constraintHorizontal_bias="0.03"
+            android:contentDescription="@string/label_Activity_mask"/>
+
+        <ImageView
+            android:id="@+id/main_activity_iv_play_loading"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/iv_play_loading"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/main_activity_bottom_iv_album"
+            app:layout_constraintTop_toTopOf="@id/main_activity_bottom_iv_album"
+            app:layout_constraintStart_toStartOf="@id/main_activity_bottom_iv_album"
+            app:layout_constraintEnd_toEndOf="@id/main_activity_bottom_iv_album"
+            android:contentDescription="@string/label_Activity_loading"/>
+
+        <!--ellipsize: 文本超过限制则给滚动显示,字体颜色由Html文字显示-->
+<!--        android:text="@{userInfo.playbackInfo,default=@string/label_default_artist}"-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_activity_bottom_tv_song"
+            android:text="@{userInfo.playbackInfo,default=@string/label_default_artist}"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/main_activity_bottom_layout"
+            app:layout_constraintBottom_toBottomOf="@id/main_activity_bottom_iv_album"
+            app:layout_constraintStart_toEndOf="@id/main_activity_bottom_iv_album"
+            android:layout_marginStart="8dp"
+            app:layout_constraintWidth_percent=".54"
+            tools:viewBindingIgnore="true"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:id="@+id/dialog_edit_user_rv_exit"
+            app:layout_constraintBottom_toTopOf="@id/main_activity_bottom_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="30dp"
+            tools:viewBindingIgnore="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:id="@+id/dialog_edit_user_tv_author_tips"
+                android:textSize="12sp"
+                android:textColor="@color/color60White"
+                android:text="@string/label_default_exit_tips"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_percent=".6"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:viewBindingIgnore="true"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:id="@+id/main_activity_tv_author_exit"
+                android:textSize="12sp"
+                android:textColor="@color/colorNightDrawableBlack"
+                android:text="@string/label_about_app_exit"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:foreground="@drawable/textview_round"
+                android:background="?android:selectableItemBackgroundBorderless"
+                app:layout_constraintTop_toTopOf="@id/dialog_edit_user_tv_author_tips"
+                app:layout_constraintBottom_toBottomOf="@id/dialog_edit_user_tv_author_tips"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

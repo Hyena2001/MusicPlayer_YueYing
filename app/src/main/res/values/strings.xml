@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">WUPPO MUSIC</string>
+
+
+    <string name="label_about_app_exit">退出</string>
+    <!--默认字符串-->
+    <string name="label_default_id">1000</string><!--用于设置item_list(layout)的音乐数目的大小，居中显示-->
+    <string name="_0">0</string><!--用于设置item_list(layout)的音乐数目的大小，居中显示-->
+    <string name="label_default_not_yet_open">该功能暂未开放</string>
+    <string name="label_default_author">作者：\@Hyena王紫涓</string>
+    <string name="label_default_author_label">个性便笺：\(030)/</string>
+    <string name="label_default_exit_tips">长按退出且只保留最近任务视图</string>
+    <string name="label_default_empty_RecycleView">I AM HYENA</string>
+    <string name="label_default_unknown">Unknown</string>
+    <string name="label_default_local">本地音乐</string>
+    <string name="label_default_comment">评论</string>
+    <string name="label_default_comment_area">评论区</string>
+    <string name="label_default_comment_hottest">最热</string>
+    <string name="label_default_comment_new">最新</string>
+    <string name="label_default_Separator">-</string>
+    <string name="label_default_music_progress">00:00</string>
+    <string name="label_default_title">No Me Importar El Dinero (En Vivo)</string>
+    <string name="label_default_title2">HYENA</string>
+    <string name="label_default_artist">不知名艺术家</string>
+    <string name="label_year_month_date">YYYY-MM-DD HH:mm:ss</string>
+    <string name="label_year_month_date1">2020年3月28日</string>
+    <string name="label_year_month_date2">yyyy年MM月dd日 HH时mm分ss秒</string>
+    <string name="label_minute_second">mm:ss</string>
+    <string name="label_phone_refresh">60Hz</string>
+
+    <!--默认歌单名-->
+    <string name="label_SheetTableName">SongSheet_table</string>
+    <string name="label_HistoryTableName">HistoryPlay_table</string>
+    <string name="label_MyLovedSheetName">Tb_MyLoveList</string>
+    <!--item-->
+    <string name="label_item_more">更多</string>
+    <string name="label_item_music_count">0首</string>
+    <!--Activity-->
+    <string name="label_Activity_mask">遮罩层</string>
+    <string name="label_Activity_line">分割线</string>
+    <string name="label_Activity_list">正在播放音乐的歌单</string>
+    <string name="label_Activity_toggle">播放切换</string>
+    <string name="label_Activity_return">返回上一级Activity</string>
+    <string name="label_Activity_loading">加载中</string>
+    <string name="label_Activity_loading_comment">评论加载中&#8230;</string>
+    <!--MainActivity-->
+    <string name="label_MainActivity_recommend">使用</string>
+    <string name="label_MainActivity_info">发现</string>
+    <string name="label_MainActivity_mine">我的</string>
+    <string name="label_MainActivity_browser">浏览</string>
+    <string name="label_MainActivity_download">下载</string>
+    <!--MusicActivity-->
+    <string name="label_MusicActivity_song">单曲</string>
+    <string name="label_MusicActivity_search">搜索</string>
+    <string name="label_MusicActivity_video">视频</string>
+    <string name="label_MusicActivity_faster">其他</string>
+    <string name="label_MusicActivity_where">歌单</string>
+    <string name="label_MusicActivity_search_music">搜索歌单内歌曲、歌手、专辑</string>
+    <!--SongLrcActivity-->
+    <string name="label_SongLrcActivity_background">背景</string>
+    <string name="label_SongLrcActivity_share">分享歌曲</string>
+    <string name="label_SongLrcActivity_return">返回上一级Activity</string>
+    <string name="label_SongLrcActivity_volume">音量调节</string>
+    <string name="label_SongLrcActivity_cover">歌曲封面</string>
+    <string name="label_SongLrcActivity_comment">评论</string>
+    <string name="label_SongLrcActivity_download">下载歌曲</string>
+    <string name="label_SongLrcActivity_browser">浏览</string>
+    <string name="label_SongLrcActivity_love">收藏至最近很喜欢</string>
+    <string name="label_SongLrcActivity_more">更多功能</string>
+    <string name="label_SongLrcActivity_play_mode_toggle">播放模式切换</string>
+    <string name="label_SongLrcActivity_previous">上一曲</string>
+    <string name="label_SongLrcActivity_play_toggle">播放切换</string>
+    <string name="label_SongLrcActivity_next">下一曲</string>
+    <string name="label_SongLrcActivity_get">获取封面歌词</string>
+    <!--WelcomeActivity-->
+    <string name="label_WelcomeActivity_line1">谁谓无音</string>
+    <string name="label_WelcomeActivity_line2">天籁随行</string>
+    <string name="label_WelcomeActivity_line3">- 快去享受音乐吧 -</string>
+    <!--Fragment-->
+    <!--MineFragment-->
+    <string name="label_MineFragment_user_name">Hyena王紫涓</string>
+    <string name="label_MineFragment_user_name_tips">用户名：</string>
+    <string name="label_MineFragment_user_icon">用户头像</string>
+    <string name="label_MineFragment_user_icon_tips">更换头像:</string>
+    <string name="label_MineFragment_user_app_style_tips">滑动更换主题:</string>
+    <string name="label_MineFragment_user_label">I AM HYENA。</string>
+    <string name="label_MineFragment_user_label_tips">个性便笺：</string>
+    <string name="label_MineFragment_input_new_user_name">点击输入新用户名</string>
+    <string name="label_MineFragment_input_new_user_label">点击输入新个性便笺</string>
+    <string name="label_MineFragment_user_share">分享</string>
+    <string name="label_MineFragment_local_download">本地/下载</string>
+    <string name="label_MineFragment_import_list">导入外部歌单</string>
+    <string name="label_MineFragment_export_list">导出当前歌单</string>
+    <string name="label_MineFragment_sheet_more">更多</string>
+    <string name="label_MineFragment_sheet_add">添加</string>
+    <string name="label_MineFragment_sheet_empty">清空输入框</string>
+
+    <string name="label_BrowserFragment_home_title">输入访问的网址并回车搜索</string>
+    <string name="label_DownloadFragment_tips">下载历史</string>
+    <string name="label_HelpFragment_tips">使用提示</string>
+    <string name="label_DownloadFragment_et_hint">搜索下载历史中的歌曲</string>
+    <string name="label_Fragment_show_lrc">显示桌面歌词：</string>
+    <string name="label_Fragment_info_tips">歌曲搜索中&#8230;</string>
+    <!--Dialog-->
+    <string name="label_Dialog_line">分割线</string>
+    <string name="label_Dialog_dot">所在提示</string>
+    <string name="label_Dialog_return">返回</string>
+    <string name="label_Dialog_cancel">取消</string>
+    <string name="label_Dialog_confirm">确定</string>
+    <string name="label_Dialog_download">下载</string>
+    <string name="label_Dialog_share">分享</string>
+    <string name="label_Dialog_edit">编辑</string>
+    <string name="label_Dialog_delete">删除</string>
+    <string name="label_Dialog_more">更多</string>
+    <string name="label_Dialog_add">添加</string>
+    <string name="label_Dialog_cover">歌曲封面</string>
+    <string name="label_Dialog_love">收藏到歌单</string>
+    <string name="label_Dialog_Music_sheet">音乐歌单</string>
+    <string name="label_Dialog_video_sheet">视频歌单</string>
+    <string name="label_Dialog_input_new_sheet_name">输入新歌单名</string>
+    <string name="label_Dialog_new_sheet_tips">提示：暂时只能添加音乐歌单，请谅解。</string>
+    <string name="label_Dialog_delete_sheet">您确定要删除此歌单吗？</string>
+    <string name="label_Dialog_edit_sheet">编辑歌单信息</string>
+    <string name="label_Dialog_edit_sheet2">编辑信息 ></string>
+    <string name="label_Dialog_edit_sheet_cover">更换封面</string>
+    <string name="label_Dialog_edit_sheet_name">名称</string>
+    <string name="label_Dialog_edit_sheet_name1">歌单名称</string>
+    <string name="label_Dialog_edit_sheet_alias">歌单别名</string>
+    <string name="label_Dialog_edit_sheet_label">标签</string>
+    <string name="label_Dialog_edit_sheet_save">保存</string>
+    <string name="label_Dialog_edit_sheet_input_label">请输入歌曲标签</string>
+    <string name="label_Dialog_edit_sheet_describe">描述</string>
+    <string name="label_Dialog_edit_sheet_describe_no">暂无描述</string>
+    <string name="label_Dialog_show_cover_bg">高清大图</string>
+    <string name="label_Dialog_edit_song_tips">提示：至少输入歌名、歌手、专辑其中任意一项即可点击保存。请谨慎更改！此操作可能会更改播放路径。</string>
+    <string name="label_Dialog_input_title_tips">歌名：</string>
+    <string name="label_Dialog_input_artist_tips">歌手：</string>
+    <string name="label_Dialog_input_album_tips">专辑：</string>
+    <string name="label_Dialog_input_album_path_tips">封面：</string>
+    <string name="label_Dialog_input_path_tips">播放：</string>
+    <string name="label_Dialog_input_new_title">点击输入新歌名</string>
+    <string name="label_Dialog_input_new_artist">点击输入新歌手</string>
+    <string name="label_Dialog_input_new_album">点击输入新专辑</string>
+    <string name="label_Dialog_input_new_path">例如“内部存储设备/Music/歌名 - 歌手.mp3”</string>
+    <string name="label_Dialog_scroll_set_blur_radius">背景模糊值：</string>
+    <string name="label_Dialog_scroll_set_record_cycle">唱片周期：</string>
+    <string name="label_Dialog_scroll_set_voice_improvement">人声增强：</string>
+    <string name="label_Dialog_scroll_set_Notification_Style">音乐通知样式：</string>
+    <string name="Notification_Style_System">系统样式</string>
+    <string name="Notification_Style_Custom">个性样式</string>
+
+    <!--notification-->
+    <string name="label_notification_close">关闭</string>
+    <string name="label_notification_love">收藏至最近很喜欢</string>
+    <string name="label_notification_previous">上一曲</string>
+    <string name="label_notification_next">下一曲</string>
+    <string name="label_notification_toggle">播放暂停切换</string>
+    <string name="label_notification_play">播放</string>
+    <string name="label_notification_pause">暂停</string>
+    <string name="label_notification_lyric">歌词</string>
+    <string name="label_notification_line">分割线</string>
+    <string name="label_notification_cover">封面</string>
+    <string name="label_notification_mode">播放模式</string>
+    <string name="flag">|</string>
+
+
+</resources>
